@@ -1,0 +1,199 @@
+.body {
+  background: linear-gradient(#eeeeeeeb, #eeeeeeeb),
+    url("../../../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  margin: 20px auto;
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  border-radius: 50px;
+  background: #eeeeee;
+  box-shadow: 20px 20px 40px #bebebe, -20px -20px 40px #ffffff;
+  padding: 30px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+td {
+  padding: 20px;
+  text-align: left;
+  width: 50%;
+}
+
+.button-only {
+  border: none;
+  padding: 10px 40px;
+  border-radius: 29px;
+  background: linear-gradient(145deg, #ffffff, #d6d6d6);
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+}
+
+.logout-btn {
+  color: red;
+  margin-left: 40px;
+}
+
+.sampleImg:hover {
+  border-radius: 50%;
+  background: linear-gradient(145deg, #d6d6d6, #ffffff);
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+.button-only:hover {
+  background: linear-gradient(145deg, #d6d6d6, #ffffff);
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+.sampleImg:active {
+  border-radius: 50%;
+  background: #eeeeee;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.button-only:active {
+  background: #eeeeee;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.sampleImg {
+  width: 200px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ffffff, #d6d6d6);
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  cursor: pointer;
+}
+
+table {
+  margin: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 90%;
+}
+
+input[type="date"] {
+  width: 90%;
+}
+
+textarea {
+  width: 90%;
+}
+
+.about-me {
+  padding-bottom: 100px;
+}
+
+.delete-account {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  font-size: 12px;
+  color: #212427b0;
+}
+
+.delete-account:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.editIcon {
+  position: relative;
+  left: 40%;
+  cursor: pointer;
+  color: #0077b6;
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-around;
+  }
+  .left,
+  .right {
+    width: 525px;
+  }
+
+  .leftTable {
+    margin: 30px 0 0 0px;
+    width: 100%;
+  }
+  .rightTable {
+    margin: 0 0 20px 0;
+  }
+
+  .short-list {
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  * {
+    font-size: 12px;
+  }
+  .short-list {
+    padding-right: 33px;
+  }
+  .leftTable,
+  .rightTable {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  * {
+    font-size: 10px;
+  }
+  .leftTable,
+  .rightTable {
+    margin: 0;
+  }
+  .short-list {
+    padding-right: 20px;
+  }
+  .rightTable {
+    margin: 0;
+  }
+  .button-only {
+    padding: 5px 20px;
+  }
+  .logout-btn {
+    margin-left: 20px;
+  }
+  .right {
+    width: 100%;
+  }
+  td {
+    padding: 10px;
+  }
+
+  .about-me {
+    padding-bottom: 60px;
+  }
+  .sampleImg {
+    width: 100px;
+  }
+}

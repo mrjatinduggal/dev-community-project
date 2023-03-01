@@ -1,0 +1,26 @@
+.links {
+  position: fixed;
+  bottom: 0;
+  width: 65%;
+}
+
+.section {
+  width: 65%;
+  text-align: center;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 700px) {
+  .section {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .links {
+    display: none;
+  }
+}

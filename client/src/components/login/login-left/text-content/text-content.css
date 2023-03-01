@@ -1,0 +1,32 @@
+.content {
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  margin: 50px 0px;
+  text-shadow: black 0px 0px 10px;
+  animation: slide-in-anim 1.5s ease-out forwards;
+}
+
+.text {
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  text-shadow: black 0px 0px 10px;
+  animation: slide-in-anim 1.5s ease-out forwards;
+  margin-top: 80px;
+  line-height: 40px;
+}
+
+@media screen and (max-width:1290px) {
+  .headings{
+    margin-top: 150px;
+  }
+}
+
+@keyframes slide-in-anim {
+  5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-20%);
+  }
+}

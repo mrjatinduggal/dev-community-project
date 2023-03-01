@@ -1,0 +1,10 @@
+.input-group-btn {
+  position: absolute;
+  bottom: 13px;
+  left: 82%;
+  cursor: pointer;
+}
+
+.eye {
+  opacity: 0.5;
+}

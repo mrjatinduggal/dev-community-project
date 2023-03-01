@@ -1,0 +1,109 @@
+#body {
+  min-height: 100%;
+}
+
+#body {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.alertText{
+  color: red;
+  font-size: 12px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.try {
+  padding: 1em 3.5em;
+  background: #efefef;
+  border: none;
+  border-radius: 0.5rem;
+  color: #3b96d2;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.5),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.try:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.try:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.heading {
+  color: #444;
+  font-family: "Solitreo", cursive;
+  font-size: 50px;
+}
+
+.email {
+  margin: auto;
+  text-align: center;
+}
+
+.copy {
+  font-size: 12px;
+}
+
+.register {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  #body {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .form-signin {
+    padding: 10%;
+  }
+}
+@media screen and (max-width: 270px) {
+  .form-signin {
+    padding: 15%;
+  }
+  * {
+    font-size: 10px;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+}
